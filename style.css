@@ -6,6 +6,13 @@ body {
 #birthday-message {
     font-family: 'Arial', sans-serif;
     color: #333;
+    font-size: 2em;
+}
+
+#celebrateButton {
+    font-size: 1em;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
 #confettiCanvas {
@@ -16,4 +23,14 @@ body {
     height: 100%;
     pointer-events: none;
     z-index: 9999;
+}
+
+@media (max-width: 600px) {
+    #birthday-message h1 {
+        font-size: 3em;
+    }
+
+    #celebrateButton {
+        font-size: 1.5em;
+    }
 }

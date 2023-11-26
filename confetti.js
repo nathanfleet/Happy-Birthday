@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         this.y = Math.random() * -canvas.height;
         this.color = colors[Math.floor(Math.random() * colors.length)];
         this.size = Math.random() * (15 - 5) + 5;
-        this.speed = Math.random() * (5 - 1) + 1;
+        this.speed = Math.random() * (8 - 2) + 2;
         this.angle = Math.random() * 360;
         this.spin = Math.random() < 0.5 ? -1 : 1;
     }
@@ -53,6 +53,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     document.getElementById('celebrateButton').addEventListener('click', function () {
+        var audio = document.getElementById('birthdaySong');
+        audio.play();
+        
         setInterval(generateConfetti, 200);
     });
 
